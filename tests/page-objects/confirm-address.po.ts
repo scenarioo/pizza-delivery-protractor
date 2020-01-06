@@ -10,6 +10,10 @@ export class ConfirmAddressPage {
         await this.getStepElement().$('.yes').click();
     }
 
+    static async no() {
+        await this.getStepElement().$('.no').click();
+    }
+
     private static getStepElement() {
         return $('#step-confirmAddress');
     }
