@@ -1,0 +1,28 @@
+{
+  "name": "pizza-delivery-protractor",
+  "version": "1.0.0",
+  "description": "Scenarioo Pizza Delivery Example with Protractor",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/scenarioo/pizza-delivery-protractor.git"
+  },
+  "keywords": [
+    "scenarioo",
+    "protractor",
+    "e2e",
+    "testing"
+  ],
+  "author": "Daniel Suter",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/scenarioo/pizza-delivery-protractor/issues"
+  },
+  "homepage": "https://github.com/scenarioo/pizza-delivery-protractor#readme",
+  "dependencies": {
+    "protractor": "^5.4.2"
+  }
+}
