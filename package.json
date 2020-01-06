@@ -4,10 +4,11 @@
   "description": "Scenarioo Pizza Delivery Example with Protractor",
   "main": "index.js",
   "scripts": {
-    "pretest": "rm -rf tmp && tsc",
+    "pretest": "rimraf tmp && tsc",
     "test": "protractor tmp/conf.js",
     "protractor": "protractor",
     "webdriver-manager": "webdriver-manager",
+    "postinstall": "webdriver-manager update",
     "tsc": "tsc"
   },
   "repository": {
@@ -26,13 +27,13 @@
     "url": "https://github.com/scenarioo/pizza-delivery-protractor/issues"
   },
   "homepage": "https://github.com/scenarioo/pizza-delivery-protractor#readme",
-  "dependencies": {
+  "dependencies": {},
+  "devDependencies": {
     "@types/node": "^13.1.4",
     "@types/jasmine": "^3.5.0",
-    "@types/jasminewd2": "^2.0.8"
-  },
-  "devDependencies": {
+    "@types/jasminewd2": "^2.0.8",
     "protractor": "^5.4.2",
+    "rimraf": "^3.0.0",
     "typescript": "^3.7.4"
   }
 }
