@@ -1,9 +1,10 @@
-import {$} from 'protractor';
+import {$, browser, protractor} from 'protractor';
 
 export class ConfirmationPage {
 
     static async assertPageIsShown() {
-        await this.getStepElement().isDisplayed();
+        const EC = protractor.ExpectedConditions;
+        await browser.wait(EC.visibilityOf(this.getStepElement()), 15 * 1000);
     }
 
     private static getStepElement() {
